@@ -1,6 +1,6 @@
 {
 	"extName" : {
-		"message" : "AVIM - Vietnamese Input Method",
+		"message" : "Unikey - Vietnamese Input Method",
 		"description" : "Extension name"
 	},
 	"extDescription" : {
@@ -8,27 +8,27 @@
 		"description" : "Extension description"
 	},
 	"extAction" : {
-		"message" : "Options for AVIM",
+		"message" : "Options",
 		"description" : "Default title of browser action"
 	},
 	"extPopupSel" : {
 		"message" : "Select an options:",
 		"description" : ""
 	},
-	"extPopupAuto" : {
-		"message" : "Both Telex and VNI",
+	"extPopupViqr" : {
+		"message" : "VIQR mode",
 		"description" : ""
 	},
 	"extPopupTelex" : {
-		"message" : "Telex only",
+		"message" : "TELEX mode",
 		"description" : ""
 	},
 	"extPopupVni" : {
-		"message" : "VNI only",
+		"message" : "VNI mode",
 		"description" : ""
 	},
 	"extPopupOff" : {
-		"message" : "Turn off AVIM",
+		"message" : "Turn off",
 		"description" : ""
 	},
 	"extPopupTips" : {
@@ -36,7 +36,7 @@
 		"description" : ""
 	},
 	"extPopupTipsCtrl" : {
-		"message" : "You can turn on/off AVIM by press Ctrl twice.",
+		"message" : "You can turn on/off by press Ctrl twice.",
 		"description" : ""
 	},
 	"extPopupDemo" : {

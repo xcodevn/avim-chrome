@@ -1,6 +1,6 @@
 {
 	"extName" : {
-		"message" : "AVIM - Bộ Gõ Tiếng Việt",
+		"message" : "Unikey - Bộ Gõ Tiếng Việt",
 		"description" : "Extension name"
 	},
 	"extDescription" : {
@@ -8,15 +8,15 @@
 		"description" : "Extension description"
 	},
 	"extAction" : {
-		"message" : "Đổi kiểu gõ AVIM",
+		"message" : "Đổi kiểu gõ",
 		"description" : "Default title of browser action"
 	},
 	"extPopupSel" : {
 		"message" : "Chọn một kiểu gõ:",
 		"description" : ""
 	},
-	"extPopupAuto" : {
-		"message" : "Kết hợp",
+	"extPopupViqr" : {
+		"message" : "Kiểu VIQR",
 		"description" : ""
 	},
 	"extPopupTelex" : {
@@ -28,7 +28,7 @@
 		"description" : ""
 	},
 	"extPopupOff" : {
-		"message" : "Tắt AVIM",
+		"message" : "Tắt",
 		"description" : ""
 	},
 	"extPopupTips" : {

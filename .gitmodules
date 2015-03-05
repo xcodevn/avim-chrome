@@ -1,0 +1,3 @@
+[submodule "ibus-unikey"]
+	path = ibus-unikey
+	url = https://github.com/mrlequoctuan/ibus-unikey.git

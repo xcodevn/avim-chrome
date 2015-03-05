@@ -17,7 +17,7 @@
 	}
 	
 	function loadText() {
-		var keys = ["Sel", "Auto", "Telex", "Vni", "Off", "Tips", "TipsCtrl", "Demo", "DemoCopy"];
+		var keys = ["Sel", "Telex", "Vni", "Off", "Tips", "TipsCtrl", "Demo", "DemoCopy"];
 		for (var k in keys) {
 			$g("txt" + keys[k]).innerHTML = getI18n("extPopup" + keys[k]);
 		}
@@ -31,7 +31,6 @@
 		loadText();
 		
 		var offEle = $g("off");
-		var autoEle = $g("auto");
 		var telexEle = $g("telex");
 		var vniEle = $g("vni");
 		
@@ -39,20 +38,16 @@
 			if (response.onOff === 0) {
 				offEle.checked = true;
 			} else {
-				if (response.method === 0) {
-					autoEle.checked = true;
-				}
 				if (response.method === 1) {
 					telexEle.checked = true;
-				}
-				if (response.method === 2) {
+				} else {
 					vniEle.checked = true;
 				}
 			}
 		});
 		
 		offEle.addEventListener("click", function(){setAVIMConfig('onOff', 0);});
-		autoEle.addEventListener("click", function(){setAVIMConfig('method', 0);});
+		// viqrEle.addEventListener("click", function(){setAVIMConfig('method', 0);});
 		telexEle.addEventListener("click", function(){setAVIMConfig('method', 1);});
 		vniEle.addEventListener("click", function(){setAVIMConfig('method', 2);});
 		
