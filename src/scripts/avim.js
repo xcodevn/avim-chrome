@@ -382,8 +382,8 @@
 		if (data) {
 			AVIMGlobalConfig.method = data.method;
             // if (AVIMGlobalConfig.method == 0) Module.UnikeySetInputMethod(Module.UkInputMethod.UkViqr);
-            if (AVIMGlobalConfig.method == 1) Module.UnikeySetInputMethod(Module.UkInputMethod.UkTelex);
-            if (AVIMGlobalConfig.method == 2) Module.UnikeySetInputMethod(Module.UkInputMethod.UkVni);
+            // if (AVIMGlobalConfig.method == 1) Module.UnikeySetInputMethod(Module.UkInputMethod.UkTelex);
+            // if (AVIMGlobalConfig.method == 2) Module.UnikeySetInputMethod(Module.UkInputMethod.UkVni);
 			AVIMGlobalConfig.onOff = data.onOff;
 			AVIMGlobalConfig.ckSpell = data.ckSpell;
 			AVIMGlobalConfig.oldAccent = data.oldAccent;
@@ -393,8 +393,6 @@
 	}
 
 	sendRequest({'get_prefs':'all'}, configAVIM);
-    Module.ukstartup();
-    Module.UnikeyResetBuf();
 
 	extension.onMessage.addListener(function(request, sender, sendResponse){
 		configAVIM(request);

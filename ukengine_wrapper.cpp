@@ -8,12 +8,8 @@ int getUnikeyBufChars() { return UnikeyBufChars;}
 int getUnikeyBuf() { return (int)&UnikeyBuf[0];}
 
 
-int ukstartup() {
+int main() {
     UnikeySetup();
-    printf("hello\n"); 
-    UnikeyFilter(65);
-    UnikeyFilter(65);
-    printf("%s", UnikeyBuf);
     return 0;
 }
 
@@ -31,7 +27,6 @@ EMSCRIPTEN_BINDINGS(unikey) {
     emscripten::function("UnikeyFilter", &UnikeyFilter);
     emscripten::function("getUnikeyBackspaces", &getUnikeyBackspaces);
     emscripten::function("getUnikeyBufChars", &getUnikeyBufChars);
-   emscripten::function("ukstartup", &ukstartup);
 
     emscripten::enum_<UkInputMethod>("UkInputMethod")
              .value("UkTelex", UkTelex)
